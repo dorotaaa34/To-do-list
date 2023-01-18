@@ -9,3 +9,22 @@ html {
 body {
     font-family: 'Sofia Sans', sans-serif;
 }
+
+.flex {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.flex_item {
+    padding: 20px;
+    border: solid black;
+    background: red;
+    color: white;
+    margin: 1px;
+    flex-basis: 60px;
+}
+
+
+
+
