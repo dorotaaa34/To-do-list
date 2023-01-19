@@ -30,7 +30,7 @@ background: darkblue;
     background: red;
 }
 
-.tasks__button--toggleDone:hover {
+.tasks__button--remove:hover {
     background: rgb(212, 70, 70);
 }
 
@@ -42,6 +42,3 @@ background: darkblue;
     padding: 0;
 }
 
-.tasks__content--done {
-    text-decoration: line-through;
-}
