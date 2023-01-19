@@ -5,8 +5,7 @@ This application enables user to remember about all the tasks that needs to be d
 
 # Preview
 ![To-do-list](https://github.com/dorotaaa34/To-do-list/blob/master/images/Animation%204.gif?raw=true)
-
-Technology:
+# Technology:
 - CSS
 - JS+ futures
 - HTML
