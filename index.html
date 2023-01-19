@@ -20,17 +20,27 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <h2>Lista zadań</h2>
+    <main class="container">
     <div class="flex">
-      <div class="flex_item">Dodaj nowe zadanie
-    <form class="js-form">
+      <header>
+        <h1>Lista zadań</h1>
+        </header>
+      <section class="section">
+    <h2 class="section__header">Dodaj nowe zadanie</h2>
+    <div class="section_body">
+    <form class=" form js-form">
       <input class="js-newTask" />
         <button>Dodaj zadanie</button>
       </div>
-      <div class="flex_item"> Lista zadań
     </form>
-    <ul class="js-tasks"></ul>
+  </section>
+  <section class="section">
+    <h2 class="section__header">Lista zadań</h2>
+    <div class="section_body">
+    <ul class="js-tasks">
+    </ul>
   </div>
-  </div>
+  </section>
+  </main>
   </body>
 </html>
