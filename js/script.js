@@ -26,9 +26,9 @@
     });
   };
 
-    const bindToggleDoneEvents = () => {
-      const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
-     
+  const bindToggleDoneEvents = () => {
+    const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
+
     toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
       toggleDoneButton.addEventListener("click", () => {
         toggleTaskDone(taskIndex);
@@ -47,7 +47,7 @@
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✓" : ""}
         </button>
-        <span class="tasks__content${ task.done ? "task__content--done" :""}">
+        <span class="tasks__content${task.done ? "task__content--done" : ""}">
         ${task.content}
         </span>
         <button class="tasks__button tasks__button--remove js-remove">X</button>
@@ -66,7 +66,7 @@
 
     const newTaskElement = document.querySelector(".js-newTask");
     const newTaskContent = newTaskElement.value.trim();
-    
+
     if (newTaskContent !== "") {
       addNewTask(newTaskContent);
       newTaskElement.value = "";
