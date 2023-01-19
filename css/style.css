@@ -87,6 +87,14 @@ background: darkblue;
     background: rgb(59, 59, 168);
 }
 
+.tasks__button--remove {
+    background: red;
+}
+
+.tasks__button--toggleDone:hover {
+    background: rgb(212, 70, 70);
+}
+
 .tasks__button {
     border: none;
     color: white;
