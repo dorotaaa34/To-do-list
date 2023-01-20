@@ -6,7 +6,7 @@ This application enables user to remember about all the tasks that needs to be d
 # Preview
 ![To-do-list](https://github.com/dorotaaa34/To-do-list/blob/master/images/to-do-list.png?raw=true)
 # Demo
-
+https://dorotaaa34.github.io/To-do-list/
 # Technologies:
 - CSS
 - JS+ futures
