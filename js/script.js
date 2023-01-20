@@ -19,7 +19,7 @@
   const bindRemoveEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
 
-    removeButtons.forEach((removeButton, taskindex) => {
+    removeButtons.forEach((removeButton, taskIndex) => {
       removeButton.addEventListener("click", () => {
         removeTask(taskIndex);
       });
