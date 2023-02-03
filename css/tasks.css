@@ -1,6 +1,6 @@
 .tasks {
     list-style: none;
-    margin: 0;
+    margin: 0; 
     padding: 20px;
 }
 
@@ -24,9 +24,7 @@ tasks__item--hidden {
 
 .tasks__button--toggleDone {
     background: green;
-    display: grid;
     align-self: center;
-    padding: 6px 5px 5px 4px;
     transition: background-color 1000ms;
 }
 
@@ -36,10 +34,8 @@ tasks__item--hidden {
 
 .tasks__button--remove {
     background: red;
-    display: grid;
-    align-self: center;
-    padding: 6px 5px 5px 4px;
     transition: background-color 1000ms;
+    
 }
 
 .tasks__button--remove:hover {

@@ -9,3 +9,14 @@ html {
 body {
     font-family: 'Sofia Sans', sans-serif;
 }
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}

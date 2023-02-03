@@ -16,8 +16,8 @@
     border: none;
     margin: 0 10px 0 20px;
     transition: color 900ms;
+    display: grid;
 }
-
 
 
 .buttons__b:hover {
