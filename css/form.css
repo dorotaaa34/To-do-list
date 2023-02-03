@@ -1,4 +1,5 @@
 .form {
+    min-width: 200px;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
@@ -14,15 +15,21 @@
 .form__input {
     padding: 10px;
     border: 1px dotted grey;
+    margin: 10px;
 }
 
 .form__button {
-    padding: 10px;
+    padding: 20px;
+    margin: 10px;
     background: teal;
     color: white;
     border: none;
+    transition: 0.3s;
+    text-align: center;
 }
 
 .form__button:hover {
     background: rgb(78, 187, 187);
+    transform: scale(1.1);
 }
+

@@ -13,12 +13,21 @@
     border-bottom: 1px dotted grey;
 }
 
+tasks__item--hidden {
+    display: none;
+}
+
 .tasks__content--done {
     text-decoration: line-through;
 }
 
+
 .tasks__button--toggleDone {
     background: green;
+    display: grid;
+    align-self: center;
+    padding: 6px 5px 5px 4px;
+    transition: background-color 1000ms;
 }
 
 .tasks__button--toggleDone:hover {
@@ -27,6 +36,10 @@
 
 .tasks__button--remove {
     background: red;
+    display: grid;
+    align-self: center;
+    padding: 6px 5px 5px 4px;
+    transition: background-color 1000ms;
 }
 
 .tasks__button--remove:hover {
@@ -39,4 +52,5 @@
     width: 30px;
     height: 30px;
     padding: 0;
+    transition: background 0.4s;
 }
