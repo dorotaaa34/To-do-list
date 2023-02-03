@@ -18,11 +18,11 @@
 }
 
 .tasks__button--toggleDone {
-    background: darkblue;
+    background: green;
 }
 
 .tasks__button--toggleDone:hover {
-    background: rgb(59, 59, 168);
+    background: rgb(15, 165, 15);
 }
 
 .tasks__button--remove {
