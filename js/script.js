@@ -100,6 +100,21 @@ const renderTasks = () => {
       `;
     };
 
+    const bindButtonsEvents = () => {
+      const tickAllDoneButton = document.querySelector(".js-tickAllDone");
+
+      if (tickAllDoneButton) {
+        tickAllDoneButton.addEventListener("click", tickAllDone);
+      }
+
+      const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+
+      if(toggleHideDoneTasksButton) {
+        toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
+      }
+
+    };
+
     bindRemoveEvents();
     bindToggleDoneEvents();
   };
