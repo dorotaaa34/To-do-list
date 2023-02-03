@@ -125,9 +125,6 @@ const renderTasks = () => {
 
     };
 
-    bindRemoveEvents();
-    bindToggleDoneEvents();
-  };
 
   const onFormSubmit = (event) => {
     event.preventDefault();
