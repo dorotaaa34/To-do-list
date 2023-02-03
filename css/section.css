@@ -4,7 +4,17 @@
     box-shadow: 0 0 5px grey;
 }
 
+@media (max-width: 767px){
+.section__header{
+    grid-template-columns: 1fr
+}
+}
 .section__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
     font-size: 20px;
     padding: 20px;
     border-bottom: 1px solid #ddd;

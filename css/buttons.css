@@ -14,9 +14,11 @@
     background: transparent;
     color: teal;
     border: none;
-    margin: 0 0 0 20px;
-    transition: color 0.3s;
+    margin: 0 10px 0 20px;
+    transition: color 900ms;
 }
+
+
 
 .buttons__b:hover {
     color: rgb(40, 158, 158);
