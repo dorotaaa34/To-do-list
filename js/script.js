@@ -23,8 +23,8 @@ render();
   };
 
   const addNewTask = (newTaskContent) => {
-    tasks.push({ content: newTaskContent });
-    render();
+    tasks = [...tasks, { content: newTaskContent }];
+render();
   };
 
   const bindRemoveEvents = () => {
