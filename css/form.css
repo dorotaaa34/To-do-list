@@ -18,11 +18,11 @@
 
 .form__button {
     padding: 10px;
-    background: darkblue;
+    background: teal;
     color: white;
     border: none;
 }
 
 .form__button:hover {
-    background: rgb(59, 59, 168);
+    background: rgb(78, 187, 187);
 }
