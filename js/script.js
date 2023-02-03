@@ -11,8 +11,15 @@ render();
   };
 
   const toggleTaskDone = (taskIndex) => {
-    tasks[taskIndex].done = !tasks[taskIndex].done;
-    render();
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      {
+          ...tasks[taskIndex],
+          done: !tasks[taskIndex].done,
+      },
+      ...tasks.slice(taskIndex, +1),
+  ];
+render();
   };
 
   const addNewTask = (newTaskContent) => {
