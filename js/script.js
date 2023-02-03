@@ -115,6 +115,16 @@ const renderTasks = () => {
 
     };
 
+    const render = () => {
+      renderTasks();
+      bindRemoveEvents();
+      bindToggleDoneEvents();
+
+      renderButtons();
+      bindButtonsEvents();
+
+    };
+
     bindRemoveEvents();
     bindToggleDoneEvents();
   };
