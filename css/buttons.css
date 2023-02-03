@@ -1,0 +1,13 @@
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons__b {
+    padding: 10px;
+    background: transparent;
+    color: teal;
+    border: none;
+    margin-right: 12px;
+}
