@@ -3,42 +3,39 @@
   let hideDoneTasks = false;
 
   const removeTask = (taskIndex) => {
-    tasks = [
-      ...tasks.slice(0, taskIndex),
-      ...tasks.slice(taskIndex +1),
-  ];
-render();
+    tasks = [...tasks.slice(0, taskIndex), ...tasks.slice(taskIndex + 1)];
+    render();
   };
 
   const toggleTaskDone = (taskIndex) => {
     tasks = [
       ...tasks.slice(0, taskIndex),
       {
-          ...tasks[taskIndex],
-          done: !tasks[taskIndex].done,
+        ...tasks[taskIndex],
+        done: !tasks[taskIndex].done,
       },
       ...tasks.slice(taskIndex, +1),
-  ];
-render();
+    ];
+    render();
   };
 
   const addNewTask = (newTaskContent) => {
     tasks = [...tasks, { content: newTaskContent }];
-render();
+    render();
   };
 
-  const tickAllDone =() => {
-    tasks = tasks.map ((task) =>({
+  const tickAllDone = () => {
+    tasks = tasks.map((task) => ({
       ...task,
       done: true,
     }));
-  
+
     render();
   };
-  
+
   const toggleHideDoneTasks = () => {
     hideDoneTasks = !hideDoneTasks;
-  
+
     render();
   };
 
@@ -62,13 +59,15 @@ render();
     });
   };
 
-const renderTasks = () => {
-      let taskToHTML = "";
+  const renderTasks = () => {
+    let taskToHTML = "";
 
-      for(const task of tasks) {
-        taskToHTML+=`
+    for (const task of tasks) {
+      taskToHTML += `
     
-      <li class="tasks__item${task.done && hideDoneTasks ? "tasks__item--hidden" : ""} js-task"> 
+      <li class="tasks__item${
+        task.done && hideDoneTasks ? "tasks__item--hidden" : ""
+      } js-task"> 
       <button class="tasks__button tasks__button--toggleDone js-toggleDone">
       ${task.done ? "✓" : ""}
       </button>
@@ -78,53 +77,52 @@ const renderTasks = () => {
       <button class="tasks__button tasks__button--remove js-remove">X</button>
       </li>
       `;
-      }  
-      document.querySelector(".js-tasks").innerHTML = taskToHTML;
-    };
+    }
+    document.querySelector(".js-tasks").innerHTML = taskToHTML;
+  };
 
-    const renderButtons = () => {
-      const buttonsElement = document.querySelector(".js-buttons");
+  const renderButtons = () => {
+    const buttonsElement = document.querySelector(".js-buttons");
 
-      if (!tasks.length) {
-        buttonsElement.innerHTML ="";
-        return;
-      }
+    if (!tasks.length) {
+      buttonsElement.innerHTML = "";
+      return;
+    }
 
-      buttonsElement.innerHTML = `
+    buttonsElement.innerHTML = `
       <button class="buttons__b js-toggleHideDoneTasks">
        ${hideDoneTasks === true ? "Pokaż" : "Ukryj"} ukończone 
        </button>
       <button class="buttons__b js-tickAllDone"
-       ${tasks.every(({done}) => done) ? "disabled" : ""}> ukończ wszystkie
+       ${tasks.every(({ done }) => done) ? "disabled" : ""}> ukończ wszystkie
        </button>
       `;
-    };
+  };
 
-    const bindButtonsEvents = () => {
-      const tickAllDoneButton = document.querySelector(".js-tickAllDone");
+  const bindButtonsEvents = () => {
+    const tickAllDoneButton = document.querySelector(".js-tickAllDone");
 
-      if (tickAllDoneButton) {
-        tickAllDoneButton.addEventListener("click", tickAllDone);
-      }
+    if (tickAllDoneButton) {
+      tickAllDoneButton.addEventListener("click", tickAllDone);
+    }
 
-      const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+    const toggleHideDoneTasksButton = document.querySelector(
+      ".js-toggleHideDoneTasks"
+    );
 
-      if(toggleHideDoneTasksButton) {
-        toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
-      }
+    if (toggleHideDoneTasksButton) {
+      toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
+    }
+  };
 
-    };
+  const render = () => {
+    renderTasks();
+    bindRemoveEvents();
+    bindToggleDoneEvents();
 
-    const render = () => {
-      renderTasks();
-      bindRemoveEvents();
-      bindToggleDoneEvents();
-
-      renderButtons();
-      bindButtonsEvents();
-
-    };
-
+    renderButtons();
+    bindButtonsEvents();
+  };
 
   const onFormSubmit = (event) => {
     event.preventDefault();
