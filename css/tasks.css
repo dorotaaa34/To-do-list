@@ -21,7 +21,6 @@ tasks__item--hidden {
     text-decoration: line-through;
 }
 
-
 .tasks__button--toggleDone {
     background: green;
     align-self: center;
