@@ -14,12 +14,9 @@
     background: transparent;
     color: teal;
     border: none;
-    margin: 0 10px 0 20px;
+    margin: 0 0 0 20px;
     transition: color 900ms;
-    display: grid;
-    justify-content: center;
 }
-
 
 .buttons__b:hover {
     color: rgb(40, 158, 158);
