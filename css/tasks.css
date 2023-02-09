@@ -15,9 +15,6 @@
 
 .tasks__item--hidden {
     display: none;
-    /* display: grid; */
-    /* align-items: center; */
-    /* padding: 10px; */
 }
 
 .tasks__content--done {
