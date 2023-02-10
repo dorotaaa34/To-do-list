@@ -4,11 +4,12 @@
     box-shadow: 0 0 5px grey;
 }
 
-@media (max-width: 767px){
-.section__header{
-    grid-template-columns: 1fr
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr
+    }
 }
-}
+
 .section__header {
     display: grid;
     grid-template-columns: auto auto;
