@@ -22,6 +22,10 @@
     color: rgb(40, 158, 158);
 }
 
+.buttons__b:active {
+    color: rgb(110, 180, 180);
+}
+
 .buttons__b:disabled {
     color: lightslategrey;
 }

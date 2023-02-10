@@ -31,6 +31,10 @@
     background: rgb(15, 165, 15);
 }
 
+.tasks__button--toggleDone:active {
+    background: rgb(75, 199, 75);
+}
+
 .tasks__button--remove {
     background: red;
     align-self: center;
@@ -39,6 +43,10 @@
 
 .tasks__button--remove:hover {
     background: rgb(212, 70, 70);
+}
+
+.tasks__button--remove:active {
+    background: rgb(214, 98, 98);
 }
 
 .tasks__button {
