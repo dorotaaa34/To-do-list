@@ -26,6 +26,7 @@
     border: none;
     transition: 0.3s;
     text-align: center;
+    cursor: pointer;
 }
 
 .form__button:hover {

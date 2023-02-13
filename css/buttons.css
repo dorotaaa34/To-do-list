@@ -16,6 +16,7 @@
     border: none;
     margin: 0 0 0 20px;
     transition: color 900ms;
+    cursor: pointer;
 }
 
 .buttons__b:hover {

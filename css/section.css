@@ -1,7 +1,7 @@
 .section {
     margin: 10px 0;
     background: white;
-    box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 5px #ddd;
 }
 
 @media (max-width: 767px) {
@@ -20,4 +20,5 @@
     padding: 20px;
     border-bottom: 1px solid #ddd;
     font-weight: bold;
+    margin: 0;
 }
